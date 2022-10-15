@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Montserrat&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -7,7 +9,8 @@ nav a {
     text-align: center;
 }
 
-#hero-msg h1, #hero-msg h4 {
+#hero-msg h1,
+#hero-msg h4 {
     text-align: center;
 }
 
@@ -25,7 +28,11 @@ main section {
 }
 
 body {
+    font-family: "Montserrat";
+    font-size: 22px;
     background-color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -37,33 +44,47 @@ nav a:hover {
     color: #fff;
 }
 
-.book, .join {
+.book,
+.join {
     background-color: #17507b;
     color: #fff;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
-.book:hover, .join:hover {
+.book:hover,
+.join:hover {
     background-color: #2296b0;
     color: #fff;
 }
 
 .msg {
     background-color: #78c5d7;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 footer {
     background-color: #081A29;
     color: #fff;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
+    padding: 35px;
 }
 
 .home-title {
+    font-family: "Fira Sans";
     color: #17507b;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -71,11 +92,15 @@ h4 {
 }
 
 .msg h2 {
+    font-family: "Fira Sans";
     color: #17507b;
+    font-size: 2em;
 }
 
 .msg p {
-    color: #000;
+    color: #fff;
+    font-size: 0.8em;
+    padding-bottom: 15px;
 }
 
 footer a {
@@ -94,25 +119,52 @@ footer a:hover {
     text-decoration: underline;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 .logo {
     width: 80px;
 }
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
     width: 100%;
 }
 
+#logo_link {
+    padding-top: 5px;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #17507b;
+}
+
+main section img {
+    box-sizing: border-box;
+}
 
 /* Added CSS not included in the instructions */
 h2 {
     color: #17507b;
+    margin: 0;
 }
 
 .social a:hover {
     background-color: unset;
     text-decoration: none;
+}
+
+.mountains {
+    margin: 100px 0 150px;
 }
