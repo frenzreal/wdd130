@@ -1,7 +1,7 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Freehand&family=Montserrat&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -11,12 +11,12 @@ Fonts are separated by a & */
   --accent2-color: #FFFFFF;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "Fira Sans";
+  --heading-font: "Freehand";
   --paragraph-font: Montserrat, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #17507b;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --headline-color-on-color: #78c5d7; /* headlines on a colored background */ 
   --paragraph-color-on-white: #17507b; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: #17507b  ;
