@@ -243,6 +243,71 @@ h2 {
     text-decoration: none;
 }
 
+.faqgrid {
+    margin: 50px auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+details {
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px #808080;
+}
+
+.faq-image,
+.faq-image-2p {
+    width: 350px;
+    margin: auto;
+    filter: drop-shadow(10px 10px 0px #2296b0);
+    border-radius: 5px;
+    border: solid 1px #1a1a1a;
+}
+
+.faq-image-2p {
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.faq-dropdown summary {
+    background: #2296b0;
+    padding: 20px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.faq-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    background: #78c5d72e;
+    min-height: 275px;
+}
+
+.faq-content p {
+    grid-column: 1/3;
+    font-size: 18px;
+    margin: auto 25px;
+}
+
+.faq-dropdown summary:hover {
+    background: #78c5d7;
+}
+
+details[open] summary {
+    background: #78c5d7;
+}
+
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -10px}
+  100%  {opacity: 1; margin-left: 0px}
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -282,5 +347,16 @@ h2 {
     }
     footer {
         margin-top: 25px;
+    }
+
+    .faq-content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .faq-image, .faq-image-2p {
+        max-width: 350px;
+        width: 90%;
     }
 }
