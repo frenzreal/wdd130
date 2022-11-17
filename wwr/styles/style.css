@@ -367,10 +367,6 @@ form {
     height: 5em;
   }
   
-  .button {
-    /* Align buttons with the text fields */
-  }
-  
   button {
     height: 45px;
     width: 200px;
