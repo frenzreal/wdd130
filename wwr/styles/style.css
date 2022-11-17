@@ -380,8 +380,11 @@ form {
     border: none;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
   }
-
+  button:hover {
+    background-color: #2296b0;
+  }
   label:after {
     content: '*';
     color: red;
