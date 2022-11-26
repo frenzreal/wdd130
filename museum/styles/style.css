@@ -36,7 +36,14 @@ nav a {
     text-decoration: none;
     padding: 35px;
 }
-
+nav a:hover {
+    color: #ffffff;
+    background-color: #F54A34;
+}
+a.contactus:hover,
+a.contactus-button:hover {
+    background: #fc5e49;
+}
 img.logonav {
     width: 100px;
     padding: 10px;
