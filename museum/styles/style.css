@@ -167,7 +167,8 @@ section.msg {
     text-align: center;
 }
 
-.contactus-button {
+.contactus-button,
+.contactus-btn {
     background: #F54A34;
     color: #fff;
     text-decoration: none;
@@ -182,7 +183,9 @@ section.msg {
     cursor: pointer;
     font-size: 22px;
 }
-
+.contactus-button {
+    margin: auto;
+}
 footer {
     display: flex;
     justify-content: space-around;
