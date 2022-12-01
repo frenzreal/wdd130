@@ -41,7 +41,7 @@ nav a:hover {
     background-color: #F54A34;
 }
 a.contactus:hover,
-a.contactus-button:hover {
+.contactus-button:hover {
     background: #fc5e49;
 }
 img.logonav {
@@ -167,7 +167,7 @@ section.msg {
     text-align: center;
 }
 
-a.contactus-button {
+.contactus-button {
     background: #F54A34;
     color: #fff;
     text-decoration: none;
@@ -178,7 +178,9 @@ a.contactus-button {
     align-items: center;
     justify-content: center;
     border-radius: 6px;
-    margin: auto;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
 }
 
 footer {
@@ -215,6 +217,167 @@ footer h2 {
     text-align: center;
 }
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 5px solid #fff;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    max-width: 950px;
+  }
+  .modal-header {
+    background: #752319;
+    padding: 50px;
+    position: relative;
+}
+  .modal-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  form {
+    box-sizing: border-box;
+    /* Center the form on the page */
+    margin: 30px;
+    max-width: 600px;
+    width: 100%;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: block;
+    width: 90px;
+    text-align: left;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    color: #0f0f0f;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 18px 'Montserrat';
+  
+    /* Uniform text field size */
+    width: 100%;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+
+    padding: 5px 10px;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  label:after {
+    content: '*';
+    color: red;
+    margin-left: 2px;
+  }
+  .form-headline {
+    color: #fff;
+    margin: 0;
+  }
+
+  .form-subhead {
+    color: #0f0f0f;
+    margin: 0;
+  }
+  .form-left {
+    margin: auto;
+    width: 50%;
+  }
+  .form-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 45px;
+}
+  #feedback {
+    background-color: #752319;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;   
+    font-size: 18px;   
+}
+
+button {
+    height: 45px;
+    width: 200px;
+    background-color: #F54A34;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #fc5e49;
+  }
 @media screen and (max-width: 990px) {
     section.banner {
         flex-direction: column;
@@ -228,6 +391,7 @@ footer h2 {
     .contactus_container {
         margin: 30px 0;
         align-items: start;
+        width: 100%;
     }
     .home-anthro,
     .home-fine-arts,
@@ -279,6 +443,15 @@ footer h2 {
     footer {
         flex-direction: column;
     }
+    h1.form-headline {
+        font-size: 24px;
+    }
+    h4.form-subhead {
+        font-size: 18px;
+    }
+    form {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -286,12 +459,17 @@ footer h2 {
         padding: 20px;
     }    
     .contactus_container {
-        margin: 30px 40px;
+        margin: 30px 0;
+        width: 100%;
+        align-items: center;
     }
     main.home-grid {
         margin: 150px 20px;
     }
     section.msg {
         padding-inline: 20px;
+    }
+    .form-right {
+        padding: 20px 10px;
     }
 }
