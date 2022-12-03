@@ -46,7 +46,6 @@ a.contactus:hover,
 }
 img.logonav {
     width: 100px;
-    padding: 10px;
     border-radius: 100%;
     margin-left: 50px;
 }
@@ -381,6 +380,45 @@ button {
   button:hover {
     background-color: #fc5e49;
   }
+
+  main.museums-container {
+    margin: 100px 50px;
+}
+main.museums-container > div {
+    margin: 50px auto;
+    max-width: 1200px;
+}
+.museums-anthro,
+.museums-fine-arts,
+.museums-natural-history,
+.museums-pinto-art,
+.museums-mind {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    border: solid 1px #752319;
+    padding: 20px;
+}
+.museum-copy {
+    display: flex;
+    flex-direction: column;
+}
+main.museums-container img {
+    max-width: 400px;
+}
+main.museums-container p {
+    margin-block: 5px;
+}
+main.museums-container p span {
+    font-weight: 700;
+}
+main.museums-container h2 {
+    margin-top: 0;
+}
+
+.museum-copy a {
+    margin-top: 15px;
+}
 @media screen and (max-width: 990px) {
     section.banner {
         flex-direction: column;
@@ -408,6 +446,25 @@ button {
     main img {
         max-width: 400px;
         width: 50%;
+    }
+    .museums-anthro, .museums-fine-arts, .museums-natural-history, .museums-pinto-art, .museums-mind {
+        flex-direction: column;
+    }
+    main.museums-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 15px;
+    }
+    main.museums-container img {
+        width: 100%;
+        max-height: 250px;
+    }
+    main.museums-container > div {
+        margin-block: 0;
+    }
+    .museums-mind {
+        grid-column: 1/3;
+        flex-direction: row;
     }
 }
 
@@ -455,6 +512,19 @@ button {
     form {
         width: 90%;
     }
+    main.museums-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin-inline: auto;
+    }
+    .museums-mind {
+        grid-column: 1/2;
+        flex-direction: column;
+    }
+    main.museums-container img {
+        max-width: 420px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -474,5 +544,8 @@ button {
     }
     .form-right {
         padding: 20px 10px;
+    }
+    main.museums-container {
+        width: 90%;
     }
 }
