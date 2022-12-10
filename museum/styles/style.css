@@ -448,6 +448,15 @@ details.faq-dropdown {
 .faq-content {
     font-weight: 500;
     padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img.faq-img {
+    max-height: unset;
+    width: 90%;
+    max-width: 700px;
 }
 .contact-faq label {
     color: #fff;
